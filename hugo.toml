@@ -7,3 +7,9 @@ theme = "ananke"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[build]
+  writeStats = true
+
+[module]
+  assets = ["assets"]

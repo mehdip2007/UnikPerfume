@@ -5,18 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Men&#39;s Perfumes</title>
   <link rel="stylesheet" href="/css/style.css">
+   
+  
+  
+
 </head>
 <body>
-  <header>
-  <nav>
-    <ul style="list-style: none; display: flex; justify-content: space-around; padding: 0;">
-      <li><a href="/">صفحه اصلی</a></li>
-      <li><a href="/products/">محصولات</a></li>
-      <li><a href="/about/">درباره ما</a></li>
-      <li><a href="/contact/">تماس با ما</a></li>
+  <nav class="navbar">
+  
+  <div class="navbar-left">
+    <a href="#" class="icon human-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    </a>
+    <a href="#" class="icon search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </a>
+    <a href="#" class="icon heart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+    </a>
+    <a href="#" class="icon cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+    </a>
+</div>
+
+
+  <div class="navbar-center">    
+        <img src="/images/Logo.png" alt="Logo" style="height: 60px;">
+  </div>
+
+
+      
+  <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+  <div class="navbar-right">
+    <ul>
+        <li><a href="/">صفحه اصلی</a></li>
+        <li><a href="/products">محصولات</a></li>
+        <li><a href="/about">درباره ما</a></li>
+        <li><a href="/contact">تماس با ما</a></li>
     </ul>
-  </nav>
-</header>
+</div>
+</nav>
 
   <main>
     
@@ -48,6 +81,7 @@
   
 
   </main>
+  
   <footer>
   
   <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=573063&Code=RJ6Z5FXeE3CQivFgAvc044xvWqK46jQH'>
@@ -56,5 +90,11 @@
   
   <p>&copy; 2025 Your Company Name. All rights reserved.</p>
 </footer>
+
+  
+  
+      <script src="/js/main.js"></script>
+  
+
 </body>
 </html>

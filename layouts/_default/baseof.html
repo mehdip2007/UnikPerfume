@@ -5,12 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }}</title>
   <link rel="stylesheet" href="/css/style.css">
+   
+  <!-- Add Google Fonts -->
+  {{/*  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">  */}}
+
 </head>
 <body>
   {{ partial "header.html" . }}
+
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+  
   {{ partial "footer.html" . }}
+
+  {{ $js := resources.Get "js/main.js" }}
+  {{ if $js }}
+      <script src="{{ $js.RelPermalink }}"></script>
+  {{ else }}
+      {{ errorf "JavaScript file 'main.js' not found in assets/js/" }}
+  {{ end }}
+
 </body>
 </html>
