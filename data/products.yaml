@@ -1,0 +1,25 @@
+men:
+  - title: "Classic Woody Cologne"
+    scent_type: "Woody"
+    price: "$59.99"
+    image: "/images/products/men/AventusM.webp"
+    description: "A bold and masculine fragrance with notes of sandalwood, cedar, and musk."
+
+  - title: "Fresh Citrus Cologne"
+    scent_type: "Citrus"
+    price: "$49.99"
+    image: "/images/products/men/citrus-cologne.jpg"
+    description: "A refreshing and energizing fragrance with notes of lemon, bergamot, and mint."
+
+women:
+  - title: "Elegant Floral Perfume"
+    scent_type: "Floral"
+    price: "$79.99"
+    image: "/images/products/women/chanel-coco-mademoiselle-edp.jpg"
+    description: "A delicate and feminine fragrance with notes of rose, jasmine, and vanilla."
+
+  - title: "Sweet Vanilla Perfume"
+    scent_type: "Vanilla"
+    price: "$69.99"
+    image: "/images/products/women/vanilla-perfume.jpg"
+    description: "A warm and sweet fragrance with notes of vanilla, caramel, and almond."

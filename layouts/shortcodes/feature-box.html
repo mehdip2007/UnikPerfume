@@ -1,0 +1,7 @@
+<div class="feature-box">
+  {{ if .Get "image" }}
+    <img src="{{ .Get "image" }}" alt="{{ .Get "alt" }}" class="feature-box__image">
+  {{ end }}
+  <h3 class="feature-box__title">{{ .Get "title" }}</h3>
+  <p class="feature-box__description">{{ .Inner | markdownify }}</p>
+</div>

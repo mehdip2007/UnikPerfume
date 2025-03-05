@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/'
+languageCode = 'fa-ir'
+title = 'یونیک پرفیوم'
+theme = "ananke"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
