@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }}</title>
-  <link rel="stylesheet" href="/css/style.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  {{ $styles := resources.Get "css/style.css" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+
    
   <!-- Add Google Fonts -->
   {{/*  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">  */}}
@@ -22,6 +29,9 @@
   {{ $js := resources.Get "js/main.js" }}
   {{ if $js }}
       <script src="{{ $js.RelPermalink }}"></script>
+      <!-- Bootstrap JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   {{ else }}
       {{ errorf "JavaScript file 'main.js' not found in assets/js/" }}
   {{ end }}
