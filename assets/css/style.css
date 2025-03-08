@@ -114,3 +114,62 @@ h3, h4, h5, h6 {
 
 
 /* Base styles for the navbar */
+/* Align Icons on the Left (Only for Large Screens) */
+
+.navbar-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-icons .icon svg {
+  stroke: white;
+  width: 24px;
+  height: 24px;
+
+}
+
+/* Align Logo Center */
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-icons .cart-icon {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure SVG is visible */
+.navbar-icons .cart-icon svg {
+  stroke: white !important;
+  width: 24px;
+  height: 24px;
+}
+
+
+/* Fix SVG icon display */
+.navbar-icons .icon svg,
+.cart-icon svg {
+  stroke: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* Center the logo perfectly */
+.navbar-logo {
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hide Shopping Cart on Large Screens */
+@media (min-width: 992px) {
+  .cart-icon {
+    display: none;
+  }
+}
