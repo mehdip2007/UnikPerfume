@@ -1,27 +1,4 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ if eq .File.ContentBaseName "products" }}
-    <!-- Display links to categories -->
-    <p>Welcome to our online shop! We offer a wide range of high-quality perfumes for both men and women.</p>
-    <ul style="list-style: none; padding: 0;">
-      <li><a href="/products/men/">عطرهای مردانه</a></li>
-      <li><a href="/products/women/">عطرهای زنانه</a></li>
-    </ul>
-  {{ else }}
-    <!-- Display products for a specific category -->
-    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-      {{ $category := .File.ContentBaseName | lower }}
-      {{ with $.Site.Data.products }}
-        {{ range index . $category }}
-          <div style="border: 1px solid #ddd; padding: 10px; width: 200px; text-align: center;">
-            <h2>{{ .title }}</h2>
-            <img src="{{ .image }}" alt="{{ .title }}" style="max-width: 100%; height: auto;">
-            <p><strong>Scent Type:</strong> {{ .scent_type }}</p>
-            <p>{{ .description }}</p>
-            <p><strong>Price:</strong> {{ .price }}</p>
-          </div>
-        {{ end }}
-      {{ end }}
-    </div>
-  {{ end }}
+<h1>{{ .Title }}</h1>
+<p>{{ .Content }}</p>
 {{ end }}

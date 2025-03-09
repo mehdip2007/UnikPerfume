@@ -6,82 +6,175 @@
   <title>کالکشن عطرها</title>
   
   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   
-  <link rel="stylesheet" href="http://localhost:1313/css/style.min.ddb3bf1423980169df6f0ec8bff03276b0a6edbdf7c7b7add12b8000779c1098.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-   
   
-  
+  <link rel="stylesheet" href="http://localhost:1313/css/style.min.b9a4b52395fd826b5e675b2f4ee6424c9d725f80befcd06d05c0bc86f3764cf1.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.product-slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+  </script>
+
 
 </head>
 <body>
-  <nav class="navbar">
-  
-  <div class="navbar-left">
-    <a href="#" class="icon human-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-    </a>
-    <a href="#" class="icon search-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-    </a>
-    <a href="#" class="icon heart-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-    </a>
-    <a href="#" class="icon cart-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-    </a>
-</div>
-
-
-  <div class="navbar-center">    
-        <img src="/images/Logo.png" alt="Logo" style="height: 60px;">
-  </div>
-
-
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid" style="max-width: 1440px; position: relative;">
+    
+    
+    <div class="navbar-icons d-none d-lg-flex align-items-center">
+      <a href="#" class="icon human-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+      <a href="#" class="icon search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </a>
+      <a href="#" class="icon heart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+      </a>
+      <a href="#" class="icon cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+      </a>
       
-  <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
     </div>
 
-  <div class="navbar-right">
-    <ul>
-      <li><a href="/contact">تماس با ما</a></li>  
-      <li><a href="/about">درباره ما</a></li>
-      <li><a href="/products">محصولات</a></li>
-      <li><a href="/">صفحه اصلی</a></li>
-    </ul>
-</div>
+    
+    <div class="cart-container d-lg-none">
+      <a href="#" class="icon cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+      </a>
+    </div>
+
+    
+    <a class="navbar-brand mx-auto" href="/">
+      <img src="/images/Logo.png" alt="Logo" class="navbar-logo">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-end">  
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">تماس با ما</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">درباره ما</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            محصولات
+          </a>
+          <ul class="dropdown-menu text-end">
+            <li><a class="dropdown-item" href="/products/men">مردانه</a></li>
+            <li><a class="dropdown-item" href="/products/women">زنانه</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">صفحه اصلی</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
 </nav>
+
 
   <main>
     
-  <h1>کالکشن عطرها</h1>
-  
-    
-    <p>Welcome to our online shop! We offer a wide range of high-quality perfumes for both men and women.</p>
-    <ul style="list-style: none; padding: 0;">
-      <li><a href="/products/men/">عطرهای مردانه</a></li>
-      <li><a href="/products/women/">عطرهای زنانه</a></li>
-    </ul>
-  
+<h1>کالکشن عطرها</h1>
+<p><p>Welcome to our online shop! We offer a wide range of high-quality perfumes for both men and women.</p>
+<ul>
+<li><a href="/products/men/">محصولات مردانه</a></li>
+<li><a href="/products/women/">محصولات زنانه</a></li>
+</ul>
+</p>
+
+
+   
+
 
   </main>
   
-  <footer>
-  
+  <footer class="footer bg-black text-white text-center py-3">
+  <div class="container">
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" class="me-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://wa.me/yourphonenumber" target="_blank" class="me-3">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://t.me/yourtelegram" target="_blank" class="me-3">
+        <i class="bi bi-telegram"></i>
+      </a>
+      <a href="tel:+yourphonenumber">
+        <i class="bi bi-telephone"></i>
+      </a>
+    </div>
+    
   <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=573063&Code=RJ6Z5FXeE3CQivFgAvc044xvWqK46jQH'>
     <img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=573063&Code=RJ6Z5FXeE3CQivFgAvc044xvWqK46jQH' alt='Trust Seal' code='RJ6Z5FXeE3CQivFgAvc044xvWqK46jQH'>
   </a>
-  
-  <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    <p class="mt-2">&copy; 2024 Your Brand. All Rights Reserved.</p>
+  </div>
 </footer>
+
 
   
   
       <script src="/js/main.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   
 
 </body>

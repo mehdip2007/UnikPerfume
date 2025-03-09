@@ -1,0 +1,50 @@
+<div class="container my-5">
+  <div class="product-carousel-container">
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        {{ with site.Data.products.products }}
+          {{ $chunkSize := 3 }}  <!-- Number of products per slide -->
+          {{ $total := len . }}
+          {{ $slides := div (add $total (sub $chunkSize 1)) $chunkSize }}  <!-- Calculate total slides -->
+          
+          {{ range $i, $slide := (seq 0 (sub $slides 1)) }}
+          <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
+            <div class="row">
+              {{ range (first $chunkSize (after (mul $i $chunkSize) .)) }}
+              <div class="col-md-4">
+                <div class="product-box">
+                  <img src="{{ .image }}" alt="{{ .name }}" class="product-image">
+                  <div class="product-info">
+                    <h5>{{ .name }}</h5>
+                    <p class="price">{{ .price }}</p>
+                    {{ if .description }}
+                      <p class="description">{{ .description }}</p>
+                    {{ end }}
+                    {{ if .featured }}
+                      <span class="discount-tag">Featured</span>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        {{ end }}
+
+      </div>
+
+      <!-- Left & Right Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,61 @@
+<div class="container my-5">
+  <div class="product-carousel-container">
+    <div id="productCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        {{ with site.Data.products.products }}
+          {{ $chunkSize := 3 }}  <!-- Show 3 products per slide -->
+          {{ $totalProducts := len . }}
+          {{ $slides := div (add $totalProducts (sub $chunkSize 1)) $chunkSize }}  <!-- Calculate number of slides -->
+
+          {{ range $i := seq 0 (sub $slides 1) }}
+          <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
+            <div class="row">
+              {{ $startIndex := mul $i $chunkSize }}
+              {{ $productsSlice := slice }}  <!-- Ensure $productsSlice is a slice -->
+              {{ range after $startIndex site.Data.products.products }}  <!-- Now it correctly applies after to a list -->
+                {{ $productsSlice = $productsSlice | append . }}
+              {{ end }}
+
+              {{ range first $chunkSize $productsSlice }}
+              <div class="col-md-4">
+                <div class="product-box">
+                  <a href="/products/{{ .name | urlize }}">
+                    <img src="{{ .image }}" alt="{{ .name }}" class="product-image">
+                  </a>
+                  <div class="product-info">
+                    <h5>{{ .name }}</h5>
+                    <p class="price">{{ .price }}</p>
+                    {{ if .description }}
+                      <p class="description">{{ .description }}</p>
+                    {{ end }}
+                    {{ if .featured }}
+                      <span class="discount-tag">Featured</span>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        {{ else }}
+          <p>No products found.</p>
+        {{ end }}
+
+      </div>
+
+      <!-- Left & Right Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</div>

@@ -1,25 +1,62 @@
-men:
-  - title: "Classic Woody Cologne"
+products:
+  - name: "Classic Woody Cologne"
     scent_type: "Woody"
     price: "$59.99"
     image: "/images/products/men/AventusM.webp"
     description: "A bold and masculine fragrance with notes of sandalwood, cedar, and musk."
+    featured: true
 
-  - title: "Fresh Citrus Cologne"
+  - name: "Fresh Citrus Cologne"
     scent_type: "Citrus"
     price: "$49.99"
     image: "/images/products/men/citrus-cologne.jpg"
     description: "A refreshing and energizing fragrance with notes of lemon, bergamot, and mint."
+    featured: true
 
-women:
-  - title: "Elegant Floral Perfume"
+  - name: "محصول 1"
+    image: "/images/product1.jpg"
+    description: "توضیحات کوتاه درباره محصول 1."
+    category: "مردانه"
+    link: "/products/men/product1"
+
+  - name: "محصول 3"
+    image: "/images/product3.jpg"
+    description: "توضیحات کوتاه درباره محصول 3."
+    category: "مردانه"
+    link: "/products/men/product3"
+
+  - name: "Elegant Floral Perfume"
     scent_type: "Floral"
     price: "$79.99"
     image: "/images/products/women/chanel-coco-mademoiselle-edp.jpg"
     description: "A delicate and feminine fragrance with notes of rose, jasmine, and vanilla."
 
-  - title: "Sweet Vanilla Perfume"
+  - name: "Sweet Vanilla Perfume"
     scent_type: "Vanilla"
     price: "$69.99"
     image: "/images/products/women/vanilla-perfume.jpg"
     description: "A warm and sweet fragrance with notes of vanilla, caramel, and almond."
+
+  - name: "محصول 2"
+    image: "/images/product2.jpg"
+    description: "توضیحات کوتاه درباره محصول 2."
+    category: "زنانه"
+    link: "/products/women/product2"
+
+  - name: "Perfume A"
+    image: "/images/product1.jpg"
+    description: "A wonderful fragrance for any occasion."
+    price: "$50"
+
+  - name: "Perfume B"
+    image: "/images/product2.jpg"
+    description: "An elegant scent with floral notes."
+    price: "$60"
+    featured: true
+
+  - name: "Perfume C"
+    image: "/images/product3.jpg"
+    description: "A long-lasting perfume with woody tones."
+    price: "$45"
+    featured: true
+
