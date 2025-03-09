@@ -9,21 +9,16 @@ products:
   - name: "Fresh Citrus Cologne"
     scent_type: "Citrus"
     price: "$49.99"
-    image: "/images/products/men/citrus-cologne.jpg"
+    image: "/images/products/men/LaytonParfumsdeMarly_2.webp"
     description: "A refreshing and energizing fragrance with notes of lemon, bergamot, and mint."
     featured: true
 
-  - name: "محصول 1"
-    image: "/images/product1.jpg"
-    description: "توضیحات کوتاه درباره محصول 1."
+  - name: "Noble Blush Lattafa"
+    image: "/images/products/women/NobleBlushLattafa.jpg"
+    description: "Top note is Rose Milk; middle notes are Meringue and Almond; base notes are Vanilla, Musk and Sandalwood."
     category: "مردانه"
     link: "/products/men/product1"
 
-  - name: "محصول 3"
-    image: "/images/product3.jpg"
-    description: "توضیحات کوتاه درباره محصول 3."
-    category: "مردانه"
-    link: "/products/men/product3"
 
   - name: "Elegant Floral Perfume"
     scent_type: "Floral"
@@ -34,29 +29,17 @@ products:
   - name: "Sweet Vanilla Perfume"
     scent_type: "Vanilla"
     price: "$69.99"
-    image: "/images/products/women/vanilla-perfume.jpg"
+    image: "/images/products/women/Yara.jpg"
     description: "A warm and sweet fragrance with notes of vanilla, caramel, and almond."
 
-  - name: "محصول 2"
-    image: "/images/product2.jpg"
-    description: "توضیحات کوتاه درباره محصول 2."
+  - name: "Bade'e Al Oud Honor Glory"
+    image: "/images/products/women/Bade'eAlOudHonorGloryLattafa.jpg"
+    description: "Top notes are Pineapple and Creme Brulee; middle notes are Cinnamon, Turmeric, Black Pepper and Benzoin; base notes are Vanilla, Sandalwood, Cashmeran and Moss."
     category: "زنانه"
     link: "/products/women/product2"
 
   - name: "Perfume A"
-    image: "/images/product1.jpg"
+    image: "/images/products/men/Erba-Pura-Eau-de-Parfum-2.jpg"
     description: "A wonderful fragrance for any occasion."
     price: "$50"
-
-  - name: "Perfume B"
-    image: "/images/product2.jpg"
-    description: "An elegant scent with floral notes."
-    price: "$60"
-    featured: true
-
-  - name: "Perfume C"
-    image: "/images/product3.jpg"
-    description: "A long-lasting perfume with woody tones."
-    price: "$45"
-    featured: true
 
